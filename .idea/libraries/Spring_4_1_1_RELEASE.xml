@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Spring-4.1.1.RELEASE" type="spring">
+    <properties version="4.1.1.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebApp/lib/spring-context-support-4.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp/lib/spring-beans-4.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp/lib/spring-core-4.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp/lib/spring-context-4.1.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ApplicationServices/ApplicationServices.iml" filepath="$PROJECT_DIR$/ApplicationServices/ApplicationServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Domain/Domain.iml" filepath="$PROJECT_DIR$/Domain/Domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DomainServices/DomainServices.iml" filepath="$PROJECT_DIR$/DomainServices/DomainServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Infrastructure.iml" filepath="$PROJECT_DIR$/Infrastructure/Infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InfrastructureBatis/InfrastructureBatis.iml" filepath="$PROJECT_DIR$/InfrastructureBatis/InfrastructureBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiTiersApp.iml" filepath="$PROJECT_DIR$/MultiTiersApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebApp/WebApp.iml" filepath="$PROJECT_DIR$/WebApp/WebApp.iml" />
+    </modules>
+  </component>
+</project>
+

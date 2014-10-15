@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebApp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebApp_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WebApp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebApp" />
+          <element id="module-output" name="Domain" />
+          <element id="module-output" name="ApplicationServices" />
+          <element id="module-output" name="DomainServices" />
+          <element id="module-output" name="Infrastructure" />
+          <element id="library" level="project" name="Spring-4.1.1.RELEASE" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Domain/javaeeApplication/javaEEApplication" />
+      <element id="javaee-facet-resources" facet="ApplicationServices/javaeeApplication/javaEEApplication" />
+      <element id="javaee-facet-resources" facet="Domain/javaeeApplication/javaEEApplication" />
+      <element id="javaee-facet-resources" facet="DomainServices/javaeeApplication/javaEEApplication" />
+      <element id="javaee-facet-resources" facet="Infrastructure/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
