@@ -7,12 +7,16 @@ import java.util.Date;
  */
 public class TodoModel {
     private String description;
-    private Date creationDate;
+    private Date addingDate;
     private boolean isDone;
 
-    public TodoModel(String description, Date creationDate, boolean isDone) {
+    public TodoModel(){
+
+    }
+    public TodoModel(String description, Date addingDate, boolean isDone) {
+        this();
         this.description = description;
-        this.creationDate = creationDate;
+        this.addingDate = addingDate;
         this.isDone = isDone;
     }
 
@@ -24,12 +28,12 @@ public class TodoModel {
         this.description = description;
     }
 
-    public Date getCreationDate() {
-        return creationDate;
+    public Date getAddingDate() {
+        return addingDate;
     }
 
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
+    public void setAddingDate(Date addingDate) {
+        this.addingDate = addingDate;
     }
 
     public boolean isDone() {

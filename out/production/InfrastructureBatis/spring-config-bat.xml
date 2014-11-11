@@ -3,11 +3,5 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="classpath:spring-config-rep.xml"/>
-    <import resource="classpath:spring-config-bat.xml"/>
-
-
-    <bean id="TodoDomainService" class="Implementations.TodoDomainService">
-        <constructor-arg  name="todoFakeRepository" ref="TodoBatisRepository" />
-    </bean>
+    <bean id="TodoBatisRepository" class="Repositories.TodoBatisRepository"></bean>
 </beans>

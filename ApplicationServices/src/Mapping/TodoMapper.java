@@ -17,7 +17,7 @@ public class TodoMapper implements IGenericMapper<TodoModelDto, TodoModel> {
 
     @Override
     public TodoModelDto Transform(TodoModel param) {
-        return new TodoModelDto(param.getDescription(),param.getCreationDate(),param.isDone());
+        return new TodoModelDto(param.getDescription(),param.getAddingDate(),param.isDone());
     }
 
     @Override

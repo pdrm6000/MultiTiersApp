@@ -34,13 +34,14 @@ public class TodoBatisRepository implements IRepository<TodoModel> {
     @Override
     public Collection<TodoModel> GetAll() {
         SqlSession session = sqlSessionFactory.openSession();
+        Collection<TodoModel> result = null;
         try {
             TodoMapper mapper = session.getMapper(TodoMapper.class);
-            mapper.selectAllTodoModel();
+            result = mapper.selectAllTodoModel();
         } finally {
             session.close();
         }
-        return null;
+        return result;
     }
 
     @Override

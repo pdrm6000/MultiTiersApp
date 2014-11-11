@@ -4,9 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <import resource="classpath:spring-config-rep.xml"/>
-    <import resource="classpath:spring-config-rep-batis.xml"/>
+    <import resource="classpath:spring-config-bat.xml"/>
+
 
     <bean id="TodoDomainService" class="Implementations.TodoDomainService">
-        <constructor-arg name="todoFakeRepository" ref="TodoBatisRepository" />
+        <constructor-arg  name="todoFakeRepository" ref="TodoBatisRepository" />
     </bean>
 </beans>
