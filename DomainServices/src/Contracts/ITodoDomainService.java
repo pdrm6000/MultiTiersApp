@@ -9,5 +9,6 @@ import java.util.Collection;
  */
 public interface ITodoDomainService extends IDomainService<TodoModel> {
     Collection<TodoModel> GetModel();
+    int CreateTodoModel(TodoModel model);
 }
 

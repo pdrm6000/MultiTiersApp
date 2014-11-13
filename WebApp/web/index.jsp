@@ -15,6 +15,7 @@
   <body>
     <h1>Test</h1>
     <a href="/todo">Link to TODO</a>
+    <a href="/new">New TODO</a>
     <ul>
         <s:iterator value="todoCollection">
             <li><s:property value="description"/></li>

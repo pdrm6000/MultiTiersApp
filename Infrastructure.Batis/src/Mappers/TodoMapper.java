@@ -1,10 +1,7 @@
 package Mappers;
 
 import Models.TodoModel;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.ResultMap;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.Collection;
 
@@ -19,6 +16,10 @@ public interface TodoMapper {
             @Result(column="isDone", property="isDone")
             })
     Collection<TodoModel> selectAllTodoModel();
+
+    @Insert("insert into TodoDB.tasks (description, creationDate, isDone) values (#{description},#{addingDate},#{isDone})")
+    @Options(useGeneratedKeys = true, keyProperty="id")
+    int insertTodoModel(TodoModel todoModel);
 }
 
 

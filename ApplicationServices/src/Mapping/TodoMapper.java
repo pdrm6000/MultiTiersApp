@@ -21,6 +21,11 @@ public class TodoMapper implements IGenericMapper<TodoModelDto, TodoModel> {
     }
 
     @Override
+    public TodoModel TransformReverse(TodoModelDto param) {
+        return new TodoModel(param.getDescription(),param.getCreationDate(),param.isDone());
+    }
+
+    @Override
     public Collection<TodoModelDto> TransformColection(Collection<TodoModel> paramsArray) {
         ArrayList<TodoModelDto> result = new ArrayList<TodoModelDto>();
         for (TodoModel todo : paramsArray){

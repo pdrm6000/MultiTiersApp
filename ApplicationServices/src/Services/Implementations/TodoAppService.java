@@ -27,4 +27,9 @@ public class TodoAppService implements ITodoAppService {
         Collection<TodoModel> result = domainService.GetModel();
         return this.mapper.TransformColection(result);
     }
+
+    @Override
+    public int createTodoModel(TodoModelDto todoEntity) {
+        return this.domainService.CreateTodoModel(this.mapper.TransformReverse(todoEntity));
+    }
 }

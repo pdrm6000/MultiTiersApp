@@ -46,7 +46,16 @@ public class TodoBatisRepository implements IRepository<TodoModel> {
 
     @Override
     public int Add(TodoModel entity) {
-        return 0;
+        SqlSession session = sqlSessionFactory.openSession();
+        int result = 0;
+        try {
+            TodoMapper mapper = session.getMapper(TodoMapper.class);
+            result = mapper.insertTodoModel(entity);
+            session.commit();
+        } finally {
+            session.close();
+        }
+        return result;
     }
 
     @Override

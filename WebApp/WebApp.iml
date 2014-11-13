@@ -36,6 +36,15 @@
     <orderEntry type="module" module-name="ApplicationServices" />
     <orderEntry type="module" module-name="Domain" />
     <orderEntry type="library" name="Spring-4.1.1.RELEASE" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/xwork2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
 

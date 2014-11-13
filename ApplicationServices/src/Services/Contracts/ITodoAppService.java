@@ -8,4 +8,5 @@ import java.util.Collection;
  */
 public interface ITodoAppService {
     public Collection<TodoModelDto> GetTodoModel();
+    int createTodoModel(TodoModelDto todoEntity);
 }

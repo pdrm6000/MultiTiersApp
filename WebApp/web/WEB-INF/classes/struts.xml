@@ -11,5 +11,15 @@
                 method="execute">
             <result name="success">/index.jsp</result>
         </action>
+        <action name="create"
+                class="TodoAction"
+                method="create">
+            <result name="success">/new.jsp</result>
+        </action>
+        <action name="new"
+                class="TodoAction"
+                method="requestNew">
+            <result name="success">/new.jsp</result>
+        </action>
     </package>
 </struts>

@@ -10,7 +10,12 @@ public class TodoModelDto {
     private Date creationDate;
     private boolean isDone;
 
+    public TodoModelDto()
+    {
+
+    }
     public TodoModelDto(String description, Date creationDate, boolean isDone) {
+        this();
         this.description = description;
         this.creationDate = creationDate;
         this.isDone = isDone;
